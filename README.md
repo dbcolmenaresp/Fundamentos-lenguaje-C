@@ -21,12 +21,15 @@ El nombre del archivo debe tener por convención la extensión .c
 Para editar con el editor de texto vi se ejecuta el comando  
 vi programa.c  
 Este comando crea y prepara para la edición un archvo de nombre programa.c  
-Incluir en el archivo las siguientes líneas  
+Incluir en el archivo las siguientes líneas:  
+
 #include <stdio.h>  
+
 Int main(){  
     printf(“Hola mundo!”\n);  
     return 0;  
 }  
+
 # Compilación
 # Compilación del código fuente con el compilador gcc
 El compilador gcc es un compilador de código abierto ue viene incorporado en la mayoría de distribuciones y sistemas *NIX
@@ -49,16 +52,22 @@ Para poder ejecutar el programa se usa la siguiente sentencia en la línea de co
 En caso de haber dado un nombre diferente al programa ejecutable con la  opción –o, se ejecuta  
 ./programa  
 La ejecución del programa puede dar como resultado un error en tiempo de ejecución como una división por cero, o que no se produce el resultado deseado, en ese caso se corrije el error y se repite el proceso.  
-# Descripción breve del proceso de compilación
+# Descripción breve del proceso de compilación  
 Con el fin de obtener el código ejecutable a partir del archivo fuente, el compilador realiza una serie de pasos que progresivamente hace las modificaciones necesarias para obtener un archivo contentivo del código que puede ser ejecutado pro la computadora.  
-# Preprocesador es el primer paso que se realiza en el proceso de compilación. El preprocesador recibe el archivo fuente y se encarga de eliminar los comentarios, interpretar las directivas del preprocesador #include y agregar el contenido de los archivos indicados en dicha directiva, además de definir las constantes indicadas por la directiva #define.  
-# Compilador traduce el archivo recibido del proceso de precompilacion en código ensamblador.
-# Ensamblador crea el código fuente a partir del archivo recibido del compilador.
-# Ligador se encarga de incluir el código correspondiente a las funciones de biblioteca indicadas en el archivo fuente y resuelve las referencias a variables externas.
+# Preprocesador  
+Es el primer paso que se realiza en el proceso de compilación. El preprocesador recibe el archivo fuente y se encarga de eliminar los comentarios, interpretar las directivas del preprocesador #include y agregar el contenido de los archivos indicados en dicha directiva, además de definir las constantes indicadas por la directiva #define.  
+# Compilador  
+Traduce el archivo recibido del proceso de precompilacion en código ensamblador.
+# Ensamblador  
+Crea el código fuente a partir del archivo recibido del compilador.
+# Ligador  
+Se encarga de incluir el código correspondiente a las funciones de biblioteca indicadas en el archivo fuente y resuelve las referencias a variables externas.
 # Estructura de un programa en lenguaje C
 Comandos del preprocesador  
 Definición de tipos  
-Prototipos de funciones  
+Prototipos de funciones:  
+Se declaran al inicio del programa el tipo de variable que devuelve cada funcion, el nombre y el listado de datos que recibe como parametros. Con esta estructura se hace al programa mas claro y legible y el compilador revisa la sintaxis de las funciones.  
+tipo_devuelto nombre_funcion(tipos_parametros);  
 Declaración de variables  
 Declaración de funciones  
 Función principal main  
@@ -105,4 +114,3 @@ Do-while
 Break  
 Continue  
 # Arreglos
-
