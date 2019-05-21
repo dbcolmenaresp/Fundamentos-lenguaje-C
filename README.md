@@ -103,16 +103,17 @@ Const tipo nombre valor;
 # Operadores lógicos
 # Orden de procedencia
 # Estructuras condicionales
-##If  
-##?  
-##Switch  
+## Sentencia if  
+
+## Sentencia ?  
+## Sentencia switch  
 # Estructuras de repetición
-##For  
-##While  
-##do-while  
+## Sentencia for  
+## Sentencia while  
+## Sentencia do-while  
 # Modificadores de ciclos
-##Break  
-Cuando se ejecuta una sentencia break dentro de un bucle, se termina inmediatamente el ciclo y el control, independientemente de la condicion del bucle.
-##Continue  
-Forza la ejecucion de la siguiente iteracion del ciclo, sin ejecutar las sentencias que faltan del ciclo.
+## Break  
+Cuando se ejecuta una sentencia break dentro de un bucle, se termina inmediatamente el ciclo y el control, independientemente de la condicion del bucle.  
+## Continue  
+Forza la ejecucion de la siguiente iteracion del ciclo, sin ejecutar las sentencias que faltan del ciclo.  
 # Arreglos
