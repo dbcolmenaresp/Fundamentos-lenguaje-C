@@ -17,12 +17,14 @@ El desarrollo del [lenguaje de programación C](https://es.wikipedia.org/wiki/C_
 - Programas eficientes
 # Etapas en la creación de un programa en lenguaje C
 ## Edición
-Proceso de creación de un programa en lenguaje C con el compilador de línea de comandos gcc  
-Edición del código fuente: se crea un archivo de texto plano que contenga el código fuente completo, con el uso de un editor de texto simple como vi.  
+Proceso de creación de un programa en lenguaje C con el [compilador](https://es.wikipedia.org/wiki/Compilador) de línea de comandos [gcc](https://es.wikipedia.org/wiki/GNU_Compiler_Collection)  
+Edición del [código fuente](https://es.wikipedia.org/wiki/C%C3%B3digo_fuente): se crea un archivo de texto plano que contenga el código fuente completo, con el uso de un editor de texto simple como [vi](https://es.wikipedia.org/wiki/Vi).  
 Cada línea que contenga el archivo debe ser una sentencia que cumpla con la sintaxis del lenguaje de programación C.  
 El nombre del archivo debe tener por convención la extensión .c  
 Para editar con el editor de texto vi se ejecuta el comando  
+
 vi programa.c  
+
 Este comando crea y prepara para la edición un archvo de nombre programa.c  
 Incluir en el archivo las siguientes líneas:  
 
@@ -35,14 +37,16 @@ Int main(){
 
 ## Compilación
 ## Compilación del código fuente con el compilador gcc
-El compilador gcc es un compilador de código abierto ue viene incorporado en la mayoría de distribuciones y sistemas *NIX
+El compilador gcc es un compilador de código abierto que viene incorporado en la mayoría de distribuciones y sistemas *NIX
 Para obtener mayor información sobre este compilador se puede consultar el manual con el comando  
 man gcc  
 Para compilar el archivo editado anteriormente se procede a ejecutar el siguiente comando constituido por el comando gcc seguido por el nombre del archivo a compilar  
+
 gcc programa.c  
+
 El resultado de la ejecución de este comando es un archivo de nombre a.out que contiene el programa ejecutable resultado de la compilación siempre y cuando el compilador no detecte errores de sintaxis en el código fuente.  
 Para darle un nombre diferente al archivo ejecutable obtenido con la compilación, se usa la opción –o seguida del nombre del archivo ejecutable, como se indica en el siguiente formato  
-gcc .o ejecutable fuente.c  
+gcc -o ejecutable fuente.c  
 Con el ejemplo del código fuente programa.c seria  
 gcc –o programa programa.c  
 Para visualizar en pantalla los comandos ejecutados durante el proceso de compilación, se agrega la opción –v al comando del compilador gcc  
@@ -76,11 +80,13 @@ tipo_devuelto nombre_funcion(tipos_parametros);
 ## Función principal main  
 ## Sentencia de retorno  
 # Estructura de una función en lenguaje C
-Tiporetorno nombrefuncion(parametros){  
+
+Tipo_retorno nombre_funcion(parametros){  
 Variables locales  
 Sentencias de C  
 Sentencia de retorno  
 }  
+
 # Herramientas para la creación de programas en lenguaje C
 ## Herramientas de edición
 Bloc de notas, notepad++, sublimetex, atom, vi
@@ -107,6 +113,7 @@ Const tipo nombre valor;
 # Orden de procedencia
 # Estructuras condicionales
 ## Sentencia if  
+
 if (condicion)
     sentencia;
     
