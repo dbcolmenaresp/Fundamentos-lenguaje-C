@@ -155,3 +155,31 @@ Cuando se ejecuta una sentencia break dentro de un bucle, se termina inmediatame
 ## Continue  
 Forza la ejecucion de la siguiente iteracion del ciclo, sin ejecutar las sentencias que faltan del ciclo.  
 # Arreglos
+# Estructuras  
+Una estructura es una coleccion de variables que se referencian bajo el mismo nombre, con la finalidad de mantener junta informacion que se relaciona. Una definicion de estructura forma una plantilla que se puede usar para crear variables de estructura. Las variables que forman la estructura son llamadas elementos estructurados.
+Mediante la palabra clave struct se le indica al compilador que defina una plantlla de estructura.
+
+struct direccion{
+
+    char nombre[30];
+    char calle[40];
+    char ciudad[20];
+    char estado[3];
+    unsigned int codigo;
+};
+
+Con el bloque de codigo indicado se ha definido el formato sin definir aún ninguna variable estructurada.
+Se declara una variable estructurada asi:
+
+struct direccion info_direc;
+
+Se pueden declarar una o más variables en una sola estructura de la siguiente forma:
+
+struct direccion{
+
+    char nombre[30];
+    char calle[40];
+    char ciudad[20];
+    char estado[3];
+    unsigned int codigo;
+} info_direc, binfo, cinfo;
