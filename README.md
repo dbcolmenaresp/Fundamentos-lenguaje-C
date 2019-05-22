@@ -1,20 +1,20 @@
 # Fundamentos del lenguaje de programación C
 
 # Breve historia del lenguaje C
-El desarrollo del lenguaje de programación C inicio con el lenguaje BCPL, desarrollado por Martin Richards, luego el lenguaje B creado por Ken Thompson en 1970, el lenguaje C fue desarrollado por Dennis Ritchie en 1971.
+El desarrollo del [lenguaje de programación C](https://es.wikipedia.org/wiki/C_(lenguaje_de_programaci%C3%B3n)) inicio con el [lenguaje BCPL](https://es.wikipedia.org/wiki/BCPL_(lenguaje_de_programaci%C3%B3n)), desarrollado por [Martin Richards](https://es.wikipedia.org/wiki/Martin_Richards), luego el [lenguaje B](https://es.wikipedia.org/wiki/B_(lenguaje_de_programaci%C3%B3n)) creado por [Ken Thompson](https://es.wikipedia.org/wiki/Ken_Thompson) en 1970, el lenguaje C fue desarrollado por [Dennis Ritchie](https://es.wikipedia.org/wiki/Dennis_Ritchie) en 1971.
 # Características del lenguaje C
-Reducido tamaño con un numero pequeño de palabras clave, lo cual reduce considerablemente la curva de aprendizaje.  
-El tamaño reducido del lenguaje es compensado por las bibliotecas estándar que implementan gran cntidad de funciones especializadas.  
-El lenguaje de programación C tiene un muy reducido conjunto de instrucciones, las cuales se complementan con el uso de bibliotecas de funciones estándar, math.h, lib.h, stdio.h entre otras.  
-Se recomienda cuando se requiere una función específica en un programa, antes de desarrollar dicha función, por completo, verificar en la biblioteca estándar del compilador que este utilizando si dicha función existe y utilizarla, esto ahorra tiempo de desarrollo y depuración de los programas.  
-Contiene instrucciones de bajo nivel dirigidas a bits, lo cual le da versatilidad al lenguaje.  
-La existencia de gran cantidad de compiladores para una gran variedad de plataformas hardware permite su fácil portabilidad.  
-Se genera código ejecutable de gran eficiencia.  
+- Reducido tamaño con un numero pequeño de palabras clave, lo cual reduce considerablemente la curva de aprendizaje.  
+- El tamaño reducido del lenguaje es compensado por las bibliotecas estándar que implementan gran cntidad de funciones especializadas.  
+- El lenguaje de programación C tiene un muy reducido conjunto de instrucciones, las cuales se complementan con el uso de bibliotecas de funciones estándar, math.h, lib.h, stdio.h entre otras.  
+- Se recomienda cuando se requiere una función específica en un programa, antes de desarrollar dicha función, por completo, verificar en la biblioteca estándar del compilador que este utilizando si dicha función existe y utilizarla, esto ahorra tiempo de desarrollo y depuración de los programas.  
+- Contiene instrucciones de bajo nivel dirigidas a bits, lo cual le da versatilidad al lenguaje.  
+- La existencia de gran cantidad de compiladores para una gran variedad de plataformas hardware permite su fácil portabilidad.  
+- Se genera código ejecutable de gran eficiencia.  
 # Razones para usar el lenguaje C
-Moderno, 
-Fácil de aprender, debido a que dispone de un reducido conjunto de sentencias que permite su fácil memorización y aprendizaje.
-Sintaxis similar a lenguajes actuales, tales como PHP, JavaScript, Java y otros, lo cual permite aprovechar el aprendizaje del lenguaje C para aprender la sintaxis de otros lenguajes de programación.
-Programas eficientes
+- Moderno, 
+- Fácil de aprender, debido a que dispone de un reducido conjunto de sentencias que permite su fácil memorización y aprendizaje.
+- Sintaxis similar a lenguajes actuales, tales como PHP, JavaScript, Java y otros, lo cual permite aprovechar el aprendizaje del lenguaje C para aprender la sintaxis de otros lenguajes de programación.
+- Programas eficientes
 # Etapas en la creación de un programa en lenguaje C
 ## Edición
 Proceso de creación de un programa en lenguaje C con el compilador de línea de comandos gcc  
