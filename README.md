@@ -104,9 +104,47 @@ Const tipo nombre valor;
 # Orden de procedencia
 # Estructuras condicionales
 ## Sentencia if  
+if (condicion)
+    sentencia;
+    
+if (condicion){
+    bloque de sentencias
+}
+
+if (condicion){
+    bloque de sentencias
+}else{
+    bloque de sentencias
+}
+
+if (condicion){
+    bloque de sentencias
+}esle if (condicion){
+    bloque de sentencias
+}else{
+    bloque de sentencias
+}
 
 ## Sentencia ?  
+
+condicion ? sentencia si verdad : sentencia si falso
+
 ## Sentencia switch  
+
+switch (variable){
+    case valor1:
+        sentencia;
+        break;
+    case valor2:
+        sentencia;
+        break;
+    case valor3:
+        sentencia;
+        break;
+    default
+        sentencia;
+}
+
 # Estructuras de repetición
 ## Sentencia for  
 ## Sentencia while  
