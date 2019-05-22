@@ -103,16 +103,17 @@ Se declaran al inicio del programa el tipo de variable que devuelve cada funcion
 
 # Herramientas para la creación de programas en lenguaje C
 ## Herramientas de edición
-Bloc de notas, 
-[notepad++](https://notepad-plus-plus.org/) es un editor de texto y de código fuente libre con soporte para varios lenguajes de programación. Con soporte nativo para Microsoft Windows. Se parece al Bloc de notas en cuanto al hecho de que puede editar texto sin formato y de forma simple.  
-[Sublimetex](https://www.sublimetext.com/) es un editor de texto y editor de código fuente está escrito en C++ y Python para los plugins. Desarrollado originalmente como una extensión de Vim, con el tiempo fue creando una identidad propia, por esto aún conserva un modo de edición tipo vi llamado Vintage mode. 
-[Atom](https://atom.io/) es un editor de código de fuente de código abierto para macOS, Linux, y Windows​ con soporte para multiples plug-in escritos en Node.js y control de versiones Git integrado, desarrollado por GitHub. Atom es una aplicación de escritorio construida utilizando tecnologías web. 
-vi
+- Bloc de notas
+- [notepad++](https://notepad-plus-plus.org/) es un editor de texto y de código fuente libre con soporte para varios lenguajes de programación. Con soporte nativo para Microsoft Windows. Se parece al Bloc de notas en cuanto al hecho de que puede editar texto sin formato y de forma simple.  
+- [Sublimetex](https://www.sublimetext.com/) es un editor de texto y editor de código fuente está escrito en C++ y Python para los plugins. Desarrollado originalmente como una extensión de Vim, con el tiempo fue creando una identidad propia, por esto aún conserva un modo de edición tipo vi llamado Vintage mode.  
+- [Atom](https://atom.io/) es un editor de código de fuente de código abierto para macOS, Linux, y Windows​ con soporte para multiples plug-in escritos en Node.js y control de versiones Git integrado, desarrollado por GitHub. Atom es una aplicación de escritorio construida utilizando tecnologías web. 
+- vi
 ## Herramientas de compilación
-[Devc++](http://orwelldevcpp.blogspot.com/)  
-Eclipse  
+- [Devc++](http://orwelldevcpp.blogspot.com/)  
+- Eclipse  
 ## Herramientas en línea
-[Paiza.io](https://paiza.io/es)  
+- [Paiza.io](https://paiza.io/es) permite editar y copilar en línea. Es compatible con más de 20 lenguajes: C, C++, Java, Ruby, Python, PHP, Perl... y más. Puede utilizarlo para aprender a programar, escribir archivos por lotes, como web scraper, etc ...  
+
 # Variables
 Son espacios de memoria asignados para almacenar un valor determinado, el tamaño de memoria que se debe asignar depende del tipo de variable que se va a almacenar.  
 Declaración  
