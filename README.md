@@ -29,8 +29,7 @@ Este comando crea y prepara para la edición un archvo de nombre programa.c
 Incluir en el archivo las siguientes líneas:  
 
 `#include <stdio.h>  
-
-Int main(){  
+int main(){  
     printf(“Hola mundo!”\n);  
     return 0;  
 }`  
@@ -128,25 +127,25 @@ Valores intermedios de operaciones, acumuladores, contadores
 # Estructuras condicionales
 ## Sentencia if  
 
-`if (condicion)
+`if (condicion)  
     sentencia;`
     
-`if (condicion){
-    bloque de sentencias
+`if (condicion){  
+    bloque de sentencias  
 }`
 
-`if (condicion){
-    bloque de sentencias
-}else{
-    bloque de sentencias
-}`
+`if (condicion){  
+    bloque de sentencias  
+}else{  
+    bloque de sentencias  
+}`  
 
-`if (condicion){
-    bloque de sentencias
-}esle if (condicion){
-    bloque de sentencias
-}else{
-    bloque de sentencias
+`if (condicion){  
+    bloque de sentencias  
+}esle if (condicion){  
+    bloque de sentencias  
+}else{  
+    bloque de sentencias  
 }`
 
 ## Sentencia ?  
@@ -155,37 +154,37 @@ Valores intermedios de operaciones, acumuladores, contadores
 
 ## Sentencia switch  
 
-`switch (variable){
-    case valor1:
-        sentencia;
-        break;
-    case valor2:
-        sentencia;
-        break;
-    case valor3:
-        sentencia;
-        break;
-    default
-        sentencia;
+`switch (variable){  
+    case valor1:  
+        sentencia;  
+        break;  
+    case valor2:  
+        sentencia;  
+        break;  
+    case valor3:  
+        sentencia;  
+        break;  
+    default  
+        sentencia;  
 }`
 
 # Estructuras de repetición
 ## Sentencia for
 
-`for (iniciacion; condicion; modificador){
-    bloque de sentencias
+`for (iniciacion; condicion; modificador){  
+    bloque de sentencias  
 }`
 
 ## Sentencia while  
 
-`while(condicion){
-    bloque de sentencias
+`while(condicion){  
+    bloque de sentencias  
 }`
 
 ## Sentencia do-while  
 
-`do{
-    bloque de sentencias
+`do{  
+    bloque de sentencias  
 }while(condicion);`
 
 # Modificadores de ciclos
@@ -203,13 +202,12 @@ Forza la ejecucion de la siguiente iteracion del ciclo, sin ejecutar las sentenc
 Una estructura es una coleccion de variables que se referencian bajo el mismo nombre, con la finalidad de mantener junta informacion que se relaciona. Una definicion de estructura forma una plantilla que se puede usar para crear variables de estructura. Las variables que forman la estructura son llamadas elementos estructurados.
 Mediante la palabra clave struct se le indica al compilador que defina una plantlla de estructura.
 
-`struct direccion{
-
-    char nombre[30];
-    char calle[40];
-    char ciudad[20];
-    char estado[3];
-    unsigned int codigo;
+`struct direccion{  
+    char nombre[30];  
+    char calle[40];  
+    char ciudad[20];  
+    char estado[3];  
+    unsigned int codigo;  
 };`
 
 Con el bloque de codigo indicado se ha definido el formato sin definir aún ninguna variable estructurada.
@@ -219,12 +217,11 @@ Se declara una variable estructurada asi:
 
 Se pueden declarar una o más variables en una sola estructura de la siguiente forma:
 
-`struct direccion{
-
-    char nombre[30];
-    char calle[40];
-    char ciudad[20];
-    char estado[3];
-    unsigned int codigo;
+`struct direccion{  
+    char nombre[30];  
+    char calle[40];  
+    char ciudad[20];  
+    char estado[3];  
+    unsigned int codigo;  
 } info_direc, binfo, cinfo;`
 
