@@ -23,41 +23,53 @@ Cada línea que contenga el archivo debe ser una sentencia que cumpla con la sin
 El nombre del archivo debe tener por convención la extensión .c  
 Para editar con el editor de texto vi se ejecuta el comando  
 
-vi programa.c  
+`vi programa.c`  
 
 Este comando crea y prepara para la edición un archvo de nombre programa.c  
 Incluir en el archivo las siguientes líneas:  
 
-#include <stdio.h>  
+`#include <stdio.h>  
 
 Int main(){  
     printf(“Hola mundo!”\n);  
     return 0;  
-}  
+}`  
 
 ## Compilación
 ## Compilación del código fuente con el compilador gcc
 El compilador gcc es un compilador de código abierto que viene incorporado en la mayoría de distribuciones y sistemas *NIX
 Para obtener mayor información sobre este compilador se puede consultar el manual con el comando  
-man gcc  
+
+`man gcc`  
+
 Para compilar el archivo editado anteriormente se procede a ejecutar el siguiente comando constituido por el comando gcc seguido por el nombre del archivo a compilar  
 
-gcc programa.c  
+`gcc programa.c`  
 
 El resultado de la ejecución de este comando es un archivo de nombre a.out que contiene el programa ejecutable resultado de la compilación siempre y cuando el compilador no detecte errores de sintaxis en el código fuente.  
 Para darle un nombre diferente al archivo ejecutable obtenido con la compilación, se usa la opción –o seguida del nombre del archivo ejecutable, como se indica en el siguiente formato  
-gcc -o ejecutable fuente.c  
+
+`gcc -o ejecutable fuente.c`  
+
 Con el ejemplo del código fuente programa.c seria  
-gcc –o programa programa.c  
+
+`gcc –o programa programa.c`  
+
 Para visualizar en pantalla los comandos ejecutados durante el proceso de compilación, se agrega la opción –v al comando del compilador gcc  
-gcc –v –o programa programa.c  
+
+`gcc –v –o programa programa.c`  
+
 ## Ejecución
 ## Ejecución de un programa en el sistema *NIX
 En caso de haber realizado el proceso de compilación sin errores de sintaxis, podemos proceder a la ejecución del código fuente obtenido.  
 Para poder ejecutar el programa se usa la siguiente sentencia en la línea de comandos  
-./a.out  
+
+`./a.out`  
+
 En caso de haber dado un nombre diferente al programa ejecutable con la  opción –o, se ejecuta  
-./programa  
+
+`./programa`  
+
 La ejecución del programa puede dar como resultado un error en tiempo de ejecución como una división por cero, o que no se produce el resultado deseado, en ese caso se corrije el error y se repite el proceso.  
 # Descripción breve del proceso de compilación  
 Con el fin de obtener el código ejecutable a partir del archivo fuente, el compilador realiza una serie de pasos que progresivamente hace las modificaciones necesarias para obtener un archivo contentivo del código que puede ser ejecutado pro la computadora.  
@@ -74,18 +86,20 @@ Se encarga de incluir el código correspondiente a las funciones de biblioteca i
 ## Definición de tipos  
 ## Prototipos de funciones:  
 Se declaran al inicio del programa el tipo de variable que devuelve cada funcion, el nombre y el listado de datos que recibe como parametros. Con esta estructura se hace al programa mas claro y legible y el compilador revisa la sintaxis de las funciones.  
-tipo_devuelto nombre_funcion(tipos_parametros);  
+
+`tipo_devuelto nombre_funcion(tipos_parametros);`  
+
 ## Declaración de variables  
 ## Declaración de funciones  
 ## Función principal main  
 ## Sentencia de retorno  
 # Estructura de una función en lenguaje C
 
-Tipo_retorno nombre_funcion(parametros){  
-Variables locales  
-Sentencias de C  
-Sentencia de retorno  
-}  
+`Tipo_retorno nombre_funcion(parametros){  
+    variables locales  
+    sentencias de C  
+    sentencia de retorno  
+}`  
 
 # Herramientas para la creación de programas en lenguaje C
 ## Herramientas de edición
@@ -105,8 +119,8 @@ Locales
 Usos de variables  
 Valores intermedios de operaciones, acumuladores, contadores  
 # Constantes
-Const tipo nombre valor;  
-#define  
+`Const tipo nombre valor;`  
+`#define`  
 # Operadores aritméticos
 # Operadores de comparación
 # Operadores lógicos
@@ -114,34 +128,34 @@ Const tipo nombre valor;
 # Estructuras condicionales
 ## Sentencia if  
 
-if (condicion)
-    sentencia;
+`if (condicion)
+    sentencia;`
     
-if (condicion){
+`if (condicion){
     bloque de sentencias
-}
+}`
 
-if (condicion){
+`if (condicion){
     bloque de sentencias
 }else{
     bloque de sentencias
-}
+}`
 
-if (condicion){
+`if (condicion){
     bloque de sentencias
 }esle if (condicion){
     bloque de sentencias
 }else{
     bloque de sentencias
-}
+}`
 
 ## Sentencia ?  
 
-condicion ? sentencia si verdad : sentencia si falso
+`condicion ? sentencia si verdad : sentencia si falso`
 
 ## Sentencia switch  
 
-switch (variable){
+`switch (variable){
     case valor1:
         sentencia;
         break;
@@ -153,26 +167,26 @@ switch (variable){
         break;
     default
         sentencia;
-}
+}`
 
 # Estructuras de repetición
 ## Sentencia for
 
-for (iniciacion; condicion; modificador){
+`for (iniciacion; condicion; modificador){
     bloque de sentencias
-}
+}`
 
 ## Sentencia while  
 
-while(condicion){
+`while(condicion){
     bloque de sentencias
-}
+}`
 
 ## Sentencia do-while  
 
-do{
+`do{
     bloque de sentencias
-}while(condicion);
+}while(condicion);`
 
 # Modificadores de ciclos
 
@@ -189,27 +203,28 @@ Forza la ejecucion de la siguiente iteracion del ciclo, sin ejecutar las sentenc
 Una estructura es una coleccion de variables que se referencian bajo el mismo nombre, con la finalidad de mantener junta informacion que se relaciona. Una definicion de estructura forma una plantilla que se puede usar para crear variables de estructura. Las variables que forman la estructura son llamadas elementos estructurados.
 Mediante la palabra clave struct se le indica al compilador que defina una plantlla de estructura.
 
-struct direccion{
+`struct direccion{
 
     char nombre[30];
     char calle[40];
     char ciudad[20];
     char estado[3];
     unsigned int codigo;
-};
+};`
 
 Con el bloque de codigo indicado se ha definido el formato sin definir aún ninguna variable estructurada.
 Se declara una variable estructurada asi:
 
-struct direccion info_direc;
+`struct direccion info_direc;`
 
 Se pueden declarar una o más variables en una sola estructura de la siguiente forma:
 
-struct direccion{
+`struct direccion{
 
     char nombre[30];
     char calle[40];
     char ciudad[20];
     char estado[3];
     unsigned int codigo;
-} info_direc, binfo, cinfo;
+} info_direc, binfo, cinfo;`
+
