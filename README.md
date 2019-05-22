@@ -11,7 +11,10 @@ Contiene instrucciones de bajo nivel dirigidas a bits, lo cual le da versatilida
 La existencia de gran cantidad de compiladores para una gran variedad de plataformas hardware permite su fácil portabilidad.  
 Se genera código ejecutable de gran eficiencia.  
 # Razones para usar el lenguaje C
-Moderno, fácil de aprender, sintaxis similar a lenguajes actuales, programas eficientes
+Moderno, 
+Fácil de aprender, debido a que dispone de un reducido conjunto de sentencias que permite su fácil memorización y aprendizaje.
+Sintaxis similar a lenguajes actuales, tales como PHP, JavaScript, Java y otros, lo cual permite aprovechar el aprendizaje del lenguaje C para aprender la sintaxis de otros lenguajes de programación.
+Programas eficientes
 # Etapas en la creación de un programa en lenguaje C
 ## Edición
 Proceso de creación de un programa en lenguaje C con el compilador de línea de comandos gcc  
@@ -63,15 +66,15 @@ Crea el código fuente a partir del archivo recibido del compilador.
 ## Ligador  
 Se encarga de incluir el código correspondiente a las funciones de biblioteca indicadas en el archivo fuente y resuelve las referencias a variables externas.
 # Estructura de un programa en lenguaje C
-Comandos del preprocesador  
-Definición de tipos  
-Prototipos de funciones:  
+## Comandos del preprocesador  
+## Definición de tipos  
+## Prototipos de funciones:  
 Se declaran al inicio del programa el tipo de variable que devuelve cada funcion, el nombre y el listado de datos que recibe como parametros. Con esta estructura se hace al programa mas claro y legible y el compilador revisa la sintaxis de las funciones.  
 tipo_devuelto nombre_funcion(tipos_parametros);  
-Declaración de variables  
-Declaración de funciones  
-Función principal main  
-Sentencia de retorno  
+## Declaración de variables  
+## Declaración de funciones  
+## Función principal main  
+## Sentencia de retorno  
 # Estructura de una función en lenguaje C
 Tiporetorno nombrefuncion(parametros){  
 Variables locales  
@@ -146,16 +149,36 @@ switch (variable){
 }
 
 # Estructuras de repetición
-## Sentencia for  
+## Sentencia for
+
+for (iniciacion; condicion; modificador){
+    bloque de sentencias
+}
+
 ## Sentencia while  
+
+while(condicion){
+    bloque de sentencias
+}
+
 ## Sentencia do-while  
+
+do{
+    bloque de sentencias
+}while(condicion);
+
 # Modificadores de ciclos
+
 ## Break  
 Cuando se ejecuta una sentencia break dentro de un bucle, se termina inmediatamente el ciclo y el control, independientemente de la condicion del bucle.  
+
 ## Continue  
 Forza la ejecucion de la siguiente iteracion del ciclo, sin ejecutar las sentencias que faltan del ciclo.  
+
 # Arreglos
+
 # Estructuras  
+
 Una estructura es una coleccion de variables que se referencian bajo el mismo nombre, con la finalidad de mantener junta informacion que se relaciona. Una definicion de estructura forma una plantilla que se puede usar para crear variables de estructura. Las variables que forman la estructura son llamadas elementos estructurados.
 Mediante la palabra clave struct se le indica al compilador que defina una plantlla de estructura.
 
