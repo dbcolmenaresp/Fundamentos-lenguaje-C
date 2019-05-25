@@ -286,13 +286,16 @@ struct direccion{
 Fundamentos de programacion en C  
 <https://openlibra.com/es/book/fundamentos-de-programacion-en-c>
 
+C, el lenguaje de programacion (audio). Disponible en:  
+<https://www.ivoox.com/12394507>
+
 Aprenda lenguaje ANCI C como si estuviera en primero. Javier Garcia de Jalón de la Fuente y otros. Escuela Superior de Ingenieros Industriales. Universidad de Navarra. Disponible en:  
 <https://openlibra.com/es/book/aprenda-el-lenguaje-ansi-c-como-si-estuviera-en-primero>
 
 Programacion en C: metodologia, algoritmos y estructura de datos. Disponible en:  
 <https://intprog.files.wordpress.com/2015/08/programacion-en-c-metodologia-algoritmos-y-estructura-de-datos-editorial-mcgraw-hill.pdf>
 
-Curso intensivo de Lenguaje C. Disponible en:  
+Curso intensivo de Lenguaje C (video). Disponible en:  
 https://www.youtube.com/watch?v=8tecJkLvAgM
 
 Librerias estandard C  
