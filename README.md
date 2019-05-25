@@ -264,3 +264,16 @@ struct direccion{
 } info_direc, binfo, cinfo;
 ```
 
+# Referencias
+
+Fundamentos de programacion en C  
+https://openlibra.com/es/book/fundamentos-de-programacion-en-c
+
+Aprenda lenguaje ANCI C como si estuviera en primero. Javier Garcia de Jalón de la Fuente y otros. Escuela Superior de Ingenieros Industriales. Universidad de Navarra. Disponible en:  
+www4.tecnun.es/asignaturas/Informat1/AyudaInf/aprendainf/ansic/leng_c.pdf
+
+Programacion en C: metodologia, algoritmos y estructura de datos. Disponible en:  
+https://intprog.files.wordpress.com/2015/08/programacion-en-c-metodologia-algoritmos-y-estructura-de-datos-editorial-mcgraw-hill.pdf
+
+Librerias estandard C  
+https://drive.google.com/file/d/1bXma_2ZQiCwHGV0fLSmm_4HW9-3GpCxl/view?usp=sharing
