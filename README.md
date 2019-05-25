@@ -23,15 +23,15 @@ Cada línea que contenga el archivo debe ser una sentencia que cumpla con la sin
 El nombre del archivo debe tener por convención la extensión .c  
 Para editar con el editor de texto vi se ejecuta el comando  
 
-`vi programa.c`  
+`vi programa01.c`  
 
-Este comando crea y prepara para la edición un archvo de nombre programa.c  
+Este comando crea y prepara para la edición un archvo de nombre programa01.c  
 Incluir en el archivo las siguientes líneas:  
 
-`#include <stdio.h>  
-int main(){  
-    printf(“Hola mundo!”\n);  
-    return 0;  
+`#include <stdio.h>  `
+`int main(){  `
+    `printf(“Hola mundo!”\n);  `
+    `return 0;  
 }`  
 
 ## Compilación
@@ -43,7 +43,7 @@ Para obtener mayor información sobre este compilador se puede consultar el manu
 
 Para compilar el archivo editado anteriormente se procede a ejecutar el siguiente comando constituido por el comando gcc seguido por el nombre del archivo a compilar  
 
-`gcc programa.c`  
+`gcc programa01.c`  
 
 El resultado de la ejecución de este comando es un archivo de nombre a.out que contiene el programa ejecutable resultado de la compilación siempre y cuando el compilador no detecte errores de sintaxis en el código fuente.  
 Para darle un nombre diferente al archivo ejecutable obtenido con la compilación, se usa la opción –o seguida del nombre del archivo ejecutable, como se indica en el siguiente formato  
@@ -52,11 +52,11 @@ Para darle un nombre diferente al archivo ejecutable obtenido con la compilació
 
 Con el ejemplo del código fuente programa.c seria  
 
-`gcc –o programa programa.c`  
+`gcc –o programa programa01.c`  
 
 Para visualizar en pantalla los comandos ejecutados durante el proceso de compilación, se agrega la opción –v al comando del compilador gcc  
 
-`gcc –v –o programa programa.c`  
+`gcc –v –o programa programa01.c`  
 
 ## Ejecución
 ## Ejecución de un programa en el sistema *NIX
