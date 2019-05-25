@@ -295,8 +295,7 @@ Aprenda lenguaje ANCI C como si estuviera en primero. Javier Garcia de Jalón de
 Programacion en C: metodologia, algoritmos y estructura de datos. Disponible en:  
 <https://intprog.files.wordpress.com/2015/08/programacion-en-c-metodologia-algoritmos-y-estructura-de-datos-editorial-mcgraw-hill.pdf>
 
-Curso intensivo de Lenguaje C (video). Disponible en:  
-https://www.youtube.com/watch?v=8tecJkLvAgM
-
 Librerias estandard C  
 <https://drive.google.com/file/d/1bXma_2ZQiCwHGV0fLSmm_4HW9-3GpCxl/view?usp=sharing>
+
+[![Curso intensivo de Lenguaje C](https://img.youtube.com/vi/8tecJkLvAgM/0.jpg)](https://www.youtube.com/watch?v=8tecJkLvAgM)
