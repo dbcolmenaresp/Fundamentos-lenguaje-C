@@ -298,4 +298,5 @@ Programacion en C: metodologia, algoritmos y estructura de datos. Disponible en:
 Librerias estandard C  
 <https://drive.google.com/file/d/1bXma_2ZQiCwHGV0fLSmm_4HW9-3GpCxl/view?usp=sharing>
 
+Curso intensivo de Lenguaje C
 [![Curso intensivo de Lenguaje C](https://img.youtube.com/vi/8tecJkLvAgM/0.jpg)](https://www.youtube.com/watch?v=8tecJkLvAgM)
