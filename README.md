@@ -28,11 +28,13 @@ Para editar con el editor de texto vi se ejecuta el comando
 Este comando crea y prepara para la edición un archvo de nombre programa01.c  
 Incluir en el archivo las siguientes líneas:  
 
-`#include <stdio.h>  `
-`int main(){  `
-    `printf(“Hola mundo!”\n);  `
-    `return 0;  
-}`  
+```c
+#include <stdio.h>  
+int main(){  
+    printf(“Hola mundo!”\n);  
+    return 0;  
+}  
+```
 
 ## Compilación
 ## Compilación del código fuente con el compilador gcc
