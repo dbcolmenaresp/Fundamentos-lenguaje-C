@@ -2,6 +2,7 @@
 
 # Breve historia del lenguaje C
 El desarrollo del [lenguaje de programación C](https://es.wikipedia.org/wiki/C_(lenguaje_de_programaci%C3%B3n)) inicio con el [lenguaje BCPL](https://es.wikipedia.org/wiki/BCPL_(lenguaje_de_programaci%C3%B3n)), desarrollado por [Martin Richards](https://es.wikipedia.org/wiki/Martin_Richards), luego el [lenguaje B](https://es.wikipedia.org/wiki/B_(lenguaje_de_programaci%C3%B3n)) creado por [Ken Thompson](https://es.wikipedia.org/wiki/Ken_Thompson) en 1970, el lenguaje C fue desarrollado por [Dennis Ritchie](https://es.wikipedia.org/wiki/Dennis_Ritchie) en 1971.
+
 # Características del lenguaje C
 - Reducido tamaño con un numero pequeño de palabras clave, lo cual reduce considerablemente la curva de aprendizaje.  
 - El tamaño reducido del lenguaje es compensado por las bibliotecas estándar que implementan gran cntidad de funciones especializadas.  
@@ -10,11 +11,13 @@ El desarrollo del [lenguaje de programación C](https://es.wikipedia.org/wiki/C_
 - Contiene instrucciones de bajo nivel dirigidas a bits, lo cual le da versatilidad al lenguaje.  
 - La existencia de gran cantidad de compiladores para una gran variedad de plataformas hardware permite su fácil portabilidad.  
 - Se genera código ejecutable de gran eficiencia.  
+
 # Razones para usar el lenguaje C
 - Moderno, 
 - Fácil de aprender, debido a que dispone de un reducido conjunto de sentencias que permite su fácil memorización y aprendizaje.
 - Sintaxis similar a lenguajes actuales, tales como PHP, JavaScript, Java y otros, lo cual permite aprovechar el aprendizaje del lenguaje C para aprender la sintaxis de otros lenguajes de programación.
 - Programas eficientes
+
 # Etapas en la creación de un programa en lenguaje C
 ## Edición
 Proceso de creación de un programa en lenguaje C con el [compilador](https://es.wikipedia.org/wiki/Compilador) de línea de comandos [gcc](https://es.wikipedia.org/wiki/GNU_Compiler_Collection)  
@@ -30,6 +33,7 @@ Incluir en el archivo las siguientes líneas:
 
 ```c
 #include <stdio.h>  
+
 int main(){  
     printf(“Hola mundo!”\n);  
     return 0;  
@@ -83,6 +87,7 @@ Traduce el archivo recibido del proceso de precompilacion en código ensamblador
 Crea el código fuente a partir del archivo recibido del compilador.
 ## Ligador  
 Se encarga de incluir el código correspondiente a las funciones de biblioteca indicadas en el archivo fuente y resuelve las referencias a variables externas.
+
 # Estructura de un programa en lenguaje C
 ## Comandos del preprocesador  
 ## Definición de tipos  
@@ -95,13 +100,16 @@ Se declaran al inicio del programa el tipo de variable que devuelve cada funcion
 ## Declaración de funciones  
 ## Función principal main  
 ## Sentencia de retorno  
+
 # Estructura de una función en lenguaje C
 
-`Tipo_retorno nombre_funcion(parametros){  
+```
+Tipo_retorno nombre_funcion(parametros){  
     variables locales  
     sentencias de C  
     sentencia de retorno  
-}`  
+}
+```  
 
 # Herramientas para la creación de programas en lenguaje C
 ## Herramientas de edición
@@ -132,29 +140,38 @@ Valores intermedios de operaciones, acumuladores, contadores
 # Operadores de comparación
 # Operadores lógicos
 # Orden de procedencia
+
 # Estructuras condicionales
 ## Sentencia if  
 
-`if (condicion)  
-    sentencia;`
+```
+if (condicion)  
+    sentencia;
+```
     
-`if (condicion){  
+```
+if (condicion){  
     bloque de sentencias  
-}`
+}
+```
 
-`if (condicion){  
+```
+if (condicion){  
     bloque de sentencias  
 }else{  
     bloque de sentencias  
-}`  
+}
+```  
 
-`if (condicion){  
+```
+if (condicion){  
     bloque de sentencias  
 }esle if (condicion){  
     bloque de sentencias  
 }else{  
     bloque de sentencias  
-}`
+}
+```
 
 ## Sentencia ?  
 
@@ -162,7 +179,8 @@ Valores intermedios de operaciones, acumuladores, contadores
 
 ## Sentencia switch  
 
-`switch (variable){  
+```c
+switch (variable){  
     case valor1:  
         sentencia;  
         break;  
@@ -174,33 +192,40 @@ Valores intermedios de operaciones, acumuladores, contadores
         break;  
     default  
         sentencia;  
-}`
+}
+```
 
 # Estructuras de repetición
 ## Sentencia for
 
-`for (iniciacion; condicion; modificador){  
+```
+for (iniciacion; condicion; modificador){  
     bloque de sentencias  
-}`
+}
+```
 
 ## Sentencia while  
 
-`while(condicion){  
+```
+while(condicion){  
     bloque de sentencias  
-}`
+}
+```
 
 ## Sentencia do-while  
 
-`do{  
+```
+do{  
     bloque de sentencias  
-}while(condicion);`
+}while(condicion);
+```
 
 # Modificadores de ciclos
 
-## Break  
+### Break  
 Cuando se ejecuta una sentencia break dentro de un bucle, se termina inmediatamente el ciclo y el control, independientemente de la condicion del bucle.  
 
-## Continue  
+### Continue  
 Forza la ejecucion de la siguiente iteracion del ciclo, sin ejecutar las sentencias que faltan del ciclo.  
 
 # Arreglos
@@ -210,26 +235,32 @@ Forza la ejecucion de la siguiente iteracion del ciclo, sin ejecutar las sentenc
 Una estructura es una coleccion de variables que se referencian bajo el mismo nombre, con la finalidad de mantener junta informacion que se relaciona. Una definicion de estructura forma una plantilla que se puede usar para crear variables de estructura. Las variables que forman la estructura son llamadas elementos estructurados.
 Mediante la palabra clave struct se le indica al compilador que defina una plantlla de estructura.
 
-`struct direccion{  
+```c
+struct direccion{  
     char nombre[30];  
     char calle[40];  
     char ciudad[20];  
     char estado[3];  
     unsigned int codigo;  
-};`
+};
+```
 
 Con el bloque de codigo indicado se ha definido el formato sin definir aún ninguna variable estructurada.
 Se declara una variable estructurada asi:
 
-`struct direccion info_direc;`
+```c
+struct direccion info_direc;
+```
 
 Se pueden declarar una o más variables en una sola estructura de la siguiente forma:
 
-`struct direccion{  
+```c
+struct direccion{  
     char nombre[30];  
     char calle[40];  
     char ciudad[20];  
     char estado[3];  
     unsigned int codigo;  
-} info_direc, binfo, cinfo;`
+} info_direc, binfo, cinfo;
+```
 
