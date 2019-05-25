@@ -292,7 +292,7 @@ C, el lenguaje de programacion (audio). Disponible en:
 Aprenda lenguaje ANCI C como si estuviera en primero. Javier Garcia de Jalón de la Fuente y otros. Escuela Superior de Ingenieros Industriales. Universidad de Navarra. Disponible en:  
 <https://openlibra.com/es/book/aprenda-el-lenguaje-ansi-c-como-si-estuviera-en-primero>
 
-Curso intensivo de Lenguaje C
+Curso intensivo de Lenguaje C  
 [![Curso intensivo de Lenguaje C](https://img.youtube.com/vi/8tecJkLvAgM/0.jpg)](https://www.youtube.com/watch?v=8tecJkLvAgM)
 
 Programacion en C: metodologia, algoritmos y estructura de datos. Disponible en:  
@@ -301,5 +301,5 @@ Programacion en C: metodologia, algoritmos y estructura de datos. Disponible en:
 Librerias estandard C  
 <https://drive.google.com/file/d/1bXma_2ZQiCwHGV0fLSmm_4HW9-3GpCxl/view?usp=sharing>
 
-Lista de reproduccion de videos relacionados con Lenguaje C. Disponible en:
+Lista de reproduccion de videos relacionados con Lenguaje C. Disponible en:  
 https://www.youtube.com/playlist?list=PLCZKC1YTwC0miD2BDa_JhP4dxB1M3-iRR
