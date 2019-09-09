@@ -98,12 +98,16 @@ La ejecución del programa puede dar como resultado un error en tiempo de ejecuc
 
 # Descripción breve del proceso de compilación  
 Con el fin de obtener el código ejecutable a partir del archivo fuente, el compilador realiza una serie de pasos que progresivamente hace las modificaciones necesarias para obtener un archivo contentivo del código que puede ser ejecutado pro la computadora.  
+
 ## Preprocesador  
 Es el primer paso que se realiza en el proceso de compilación. El preprocesador recibe el archivo fuente y se encarga de eliminar los comentarios, interpretar las directivas del preprocesador #include y agregar el contenido de los archivos indicados en dicha directiva, además de definir las constantes indicadas por la directiva #define.  
+
 ## Compilador  
 Traduce el archivo recibido del proceso de precompilacion en código ensamblador.
+
 ## Ensamblador  
 Crea el código fuente a partir del archivo recibido del compilador.
+
 ## Ligador  
 Se encarga de incluir el código correspondiente a las funciones de biblioteca indicadas en el archivo fuente y resuelve las referencias a variables externas.
 
@@ -213,7 +217,7 @@ En el código fuente llamado 'operadorternario.c', se solicita al usuario que in
 	printf("Indique el numero 2\n");
 	scanf("%d", &numero2);
 ```
-A continuación se evalua la sentencia que compara los valores numero1 y numero2 con el uso del operador ternario ?
+A continuación se evalua la sentencia que compara los valores *numero1* y *numero2* con el uso del operador ternario ?
 
 ```c
 numero1 > numero2 ? printf("el numero 1 es el mayor\n") : printf("El numero 2 es el mayor o son iguales\n");
@@ -223,11 +227,11 @@ Se hace la comparación entre el número 1 y el número 2 y se muestra el mensaj
 	- Si el número 1 es mayor que el número 2, se muestra el primer mensaje,  
 	- En caso contrario se muestra el segundo.  
 
-## Actividad
+### Actividad
 
-Desarrolle un programa en lenguaje C que solicite la edad del usuario, en caso de ser menor de 18 muestre el mensaje 'Es menor de edad', en caso de ser igual o mayor a 18 muestre el mensaje 'Es mayor de edad', este usando el operador ternario ?. 
+Desarrolle un programa en lenguaje C que solicite la edad del usuario, en caso de ser menor de 18 muestre el mensaje *Es menor de edad*, en caso de ser igual o mayor a 18 muestre el mensaje *Es mayor de edad*, este usando el operador ternario ?. 
 
-Edite el código fuente con cualquier editor de texto, Notepad, [Notepad++](https://notepad-plus-plus.org/), compílelo en su computador con el compilador [Devc++](http://orwelldevcpp.blogspot.com/) o edítelo y ejecutelo en línea en la plataforma [Paiza.io](https://paiza.io/es), compruebe su funcionamiento y suba el código fuente con la explicación del funcionamiento del mismo a la plataforma GitHub.
+Edite el código fuente con cualquier editor de texto, Notepad, [Notepad++](https://notepad-plus-plus.org/), compílelo en su computador con el compilador [Devc++](http://orwelldevcpp.blogspot.com/) o edítelo y ejecútelo en línea en la plataforma [Paiza.io](https://paiza.io/es), compruebe su funcionamiento y suba el código fuente con la explicación del funcionamiento del mismo a la plataforma GitHub.
 
 ## Sentencia switch  
 
