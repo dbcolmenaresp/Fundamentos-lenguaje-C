@@ -198,9 +198,32 @@ La sentencia es un operador tenario debido a que necesita tres operadores para s
 
 `condicion ? sentencia si verdad : sentencia si falso`
 
-En esta expresion se evalua la condicion, en caso de ser cierta se ejecuta la sentencia ubicada antes del caracter :, en caso contrario se ejecuta la sentencia ubicada despues del caracter:
+En esta expresion se evalua la condicion, en caso de ser cierta se ejecuta la sentencia ubicada antes del caracter ':', en caso contrario se ejecuta la sentencia ubicada despues del caracter':'.
 
+En el codigo fuente llamado operadorternario.c, se solicita al usuario que ingrese dos numeros enteros.
 
+```c
+//Se solicita el ingreso del primer numero
+	printf("Indique el numero 1\n");
+	scanf("%d", &numero1);
+	
+	//Se solicita el ingreso del segundo numero
+	printf("Indique el numero 2\n");
+	scanf("%d", &numero2);
+```
+A continuacion se evalua la sentencia que compara los valores numero1 y numero2 con el uso del operador ternario ?
+
+```c
+numero1 > numero2 ? printf("el numero 1 es el mayor\n") : printf("El numero 2 es el mayor o son iguales\n");
+```
+
+Se hace la comparacion entre el numero 1 y el numero 2 y se muestra el mensaje correspondiente.
+	- Si numero1 es mayor que numero2, se muestra el primer mensaje, 
+	- En caso contrario se muestra el segundo.
+
+## Actividad
+
+Desarrolle un programa en lenguaje C que solicite la edad del usuario, en caso de ser menor de 18 muestre el mensaje 'Es menor de edad', en caso de ser igual o mayor a 18 muestre el mensaje 'Es mayor de edad', este usando el operador ternario ?
 
 ## Sentencia switch  
 
