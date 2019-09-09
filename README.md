@@ -190,9 +190,17 @@ if (condicion){
 }
 ```
 
-## Sentencia ?  
+## Operador tenario ?:
+
+Esta sentencia se puede usar para remplazar el condicional if - else.
+
+La sentencia es un operador tenario debido a que necesita tres operadores para su correcto funcionamiento, como se indica a continaucion.
 
 `condicion ? sentencia si verdad : sentencia si falso`
+
+En esta expresion se evalua la condicion, en caso de ser cierta se ejecuta la sentencia ubicada antes del caracter :, en caso contrario se ejecuta la sentencia ubicada despues del caracter:
+
+
 
 ## Sentencia switch  
 
