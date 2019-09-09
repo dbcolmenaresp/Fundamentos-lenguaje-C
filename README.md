@@ -39,9 +39,19 @@ utilizados que se basan en la sintaxis del lenguaje C. Algunos de los lenguajes 
 	- [Objetive-C](https://es.wikipedia.org/wiki/Objective-C) usado para desarrollar aplicaciones en la plataforma iOS.
 	- [C#](https://es.wikipedia.org/wiki/C_Sharp) usado para desarrollar aplicaciones de Windows Phone y juegos de XBOX 360.
 	- [Perl](https://es.wikipedia.org/wiki/Perl) es un conocido lenguaje usado para el diseño web en sus inicios, actualmente muy usado en labores de administracion de sistemas.
+	
+## Recomendaciones para el uso efectivo del lenguaje C
+
+- Para mantener el alto nivel de portabilidad del lenguaje de programación C, se debe usar en los programas escritos solo las sentencias y palabras reservadas estandarizadas en el ANSI C, esto debido a que todos los compiladores disponibles deben respetar este estándar.
 
 # Etapas en la creación de un programa en lenguaje C
+
+Para realizar el proceso de creación de un programa ejecutable en lenguaje C, a partir de la edición de un código fuente que cumpla con las normas sintácticas del lenguaje, se utilizan una serie de programas para realizar este proceso. A continuación se detallan las etapas que se realizan para la construcción de un programa en lenguaje C
+
 ## Edición
+
+Para crear un programa en lenguaje C se inicia por edita un archivo de texto plano que contiene el código fuente, el cual debe contener una serie de sentencias que deben que deben cumplir en primera instancia la sintaxis del lenguaje de programación C, es decir deben ser sentencias validas del lenguaje. Adicionalmente a ello, se debe garantizar que dicho código fuente sea correcto lógicamente, es decir que realice de manera correcta aquella labor para la cual fue diseñado inicialmente.
+
 Proceso de creación de un programa en lenguaje C con el [compilador](https://es.wikipedia.org/wiki/Compilador) de línea de comandos [gcc](https://es.wikipedia.org/wiki/GNU_Compiler_Collection)  
 
 Edición del [código fuente](https://es.wikipedia.org/wiki/C%C3%B3digo_fuente): se crea un archivo de texto plano que contenga el código fuente completo, con el uso de un editor de texto simple como [vi](https://es.wikipedia.org/wiki/Vi).  
@@ -116,6 +126,53 @@ Crea el código fuente a partir del archivo recibido del compilador.
 ## Ligador  
 Se encarga de incluir el código correspondiente a las funciones de biblioteca indicadas en el archivo fuente y resuelve las referencias a variables externas.
 
+## Palabras clave de ANSI C
+En el lenguaje c se han establecido una serie de palabras reservadas que realizan tareas específicas y no pueden ser usadas como identificadores.
+
+Se aconseja usar solo las palabras reservadas establecidas en el estándar ANSI C con la finalidad de facilitar la portabilidad de los programas escritos en lenguaje C, ya que todos los compiladores deben implementar estas para la construcción de programas.
+
+auto		double		int		struct
+break		else		long		switch
+case		enum		register	typedef
+char		extern		return		union
+const		float		short		unsigned
+continue	for		signed		void
+default		goto		sizeof		volatile
+do		if		static		while
+
+## Identificador
+Un identificador es un nombre simbólico que se refiere a un dato, función o programa.
+Se debe indicar de manera explícita el nombre de cada dato y función y que tipo de dato va a representar cada uno de ellos.
+El nombre de un identificador debe elegirse de forma tal que guarde una estrecha relación con el sentido físico, matemático o real del dato que representa, esto con la finalidad de facilitar el proceso de corrección y mantenimiento de los programas.
+El modo más básico de ubicar un dato en memoria es a través de un número que representa la dirección de memoria en la cual se encuentra almacenado dicho dato, pero este mecanismo presenta dos dificultades:
+- No hay un vínculo nemotécnico que permita relacionar la dirección de memoria donde se encuentra almacenado un dato con su contenido.
+- La dirección donde se almacena un dato cambia en cada ejecución del programa.
+Internamente se referencia cada dato usado en el programa con una tabla que relaciona cada identificador con el tipo de dato que representa y la posición de memoria en la que está almacenado.
+Para seleccionar un identificador, se deben seguir las siguientes reglas:
+1. Un identificador se forma por una secuencia de letras (minúsculas de la ‘a’ a la ‘z’, mayúsculas de la ‘A’ a la ‘Z’) y dígitos (del ‘0’ al ‘9’).
+2. El carácter subrayado o guion bajo (‘_’) se considera como otra letra más.
+3. Un identificador no puede contener espacios en blanco o caracteres distintos de los indicados (* , ; . : + - etc.).
+4. El primer carácter de un identificador debe ser una letra o un guion bajo, nunca se debe usar como primer carácter del identificador un número.
+5. Se discrimina entre letras mayúsculas y minúsculas.
+6. El estándar ANSI C permite definir identificadores de hasta 31 caracteres de longitud.
+7. No se puede usar ninguna palabra clave de ANSI C como identificador.
+
+### Ejemplos de identificadores validos y no validos
+
+Identificadores validos:
+
+cont
+prueba23
+Balance_total
+
+Identificadores no validos
+
+1cont
+hola!
+balance..total
+
+Es de resaltar que los compiladores de lenguaje C distinguen entre letras mayusculas y minusculas, en lo cual el identificador cuenta, Cuenta y CUENTA son tres identificadores diferentes.
+
 # Estructura de un programa en lenguaje C
 ## Comandos del preprocesador  
 ## Definición de tipos  
@@ -128,16 +185,6 @@ Se declaran al inicio del programa el tipo de variable que devuelve cada funcion
 ## Declaración de funciones  
 ## Función principal main  
 ## Sentencia de retorno  
-
-# Estructura de una función en lenguaje C
-
-```
-Tipo_retorno nombre_funcion(parametros){  
-    variables locales  
-    sentencias de C  
-    sentencia de retorno  
-}
-```  
 
 # Herramientas para la creación de programas en lenguaje C
 ## Herramientas de edición
@@ -161,15 +208,25 @@ Globales
 Locales  
 Usos de variables  
 Valores intermedios de operaciones, acumuladores, contadores  
+
 # Constantes
 `Const tipo nombre valor;`  
 `#define`  
-# Operadores aritméticos
-# Operadores de comparación
-# Operadores lógicos
-# Orden de procedencia
+
+# Operadores
+
+Los operadores son signos especiales o conjuntos de caracteres que indican determinadas operaciones a realizar con las variables.
+
+## Operadores aritméticos
+
+## Operadores de comparación
+
+## Operadores lógicos
+
+## Orden de procedencia
 
 # Estructuras condicionales
+
 ## Sentencia if  
 
 ```
@@ -325,25 +382,59 @@ struct direccion{
 } info_direc, binfo, cinfo;
 ```
 
+# FUNCIONES
+
+Una función en C es una porción de código que realiza una determinada tarea, tiene un identificador asociado que se usa para hacer referencia a ella desde cualquier lugar dentro del código fuente, se indica un tipo de valor de retorno que es el que se recupera luego de la ejecución de la función y a la misma se le indican una serie de argumentos cuyos valores toma para realizar su tarea específica.
+
+La estructura de una función se muestra a continuación:
+
+```
+Tipo_de_retorno nombre_de_funcion(argumentos){
+	Cuerpo de la función
+}
+```
+
+Una función dentro de un programa aparece en tres diferentes oportunidades, a saber
+
+- *Declaración de la función*, se indica el tipo de retorno, el nombre de la función y los argumentos sin definir el cuerpo de la función, esta se hace al inicio del código fuente para indicarle al compilador que existe la función, los argumentos son una lista de nombres de variables separadas por comas que indican los valores que se requieren para ejecutar la función adecuadamente.
+
+- *Definición de la función*, se indica nuevamente el tipo de retorno, el nombre de la función, los argumentos y se detallan las sentencias que componen el cuerpo de la función.
+
+- *Llamada de la función*, ocurre en cualquier lugar del código fuente donde se coloca el nombre de la función y la lista de argumentos y le indica al programa que debe ir hasta la función, enviando los argumentos indicados y retornar el valor obtenido de la ejecución de la función para su uso.
+
+# Estructura de una función en lenguaje C
+
+```
+Tipo_retorno nombre_funcion(parametros){  
+    variables locales  
+    sentencias de C  
+    sentencia de retorno  
+}
+```  
+
 # Referencias
 
-Fundamentos de programacion en C  
+Díaz, J. y Muñoz R. (2008). *Fundamentos del sistema operativo UNIX*. Departamento de Informática y Automática. Universidad de Educación a Distancia (UNED).
+
+Tejada, H. (s/f). *Manual de C*.
+
+*Fundamentos de programacion en C*  
 <https://openlibra.com/es/book/fundamentos-de-programacion-en-c>
 
-C, el lenguaje de programacion (audio). Disponible en:  
+*C, el lenguaje de programacion* (audio). Disponible en:  
 <https://www.ivoox.com/12394507>
 
-Aprenda lenguaje ANCI C como si estuviera en primero. Javier Garcia de Jalón de la Fuente y otros. Escuela Superior de Ingenieros Industriales. Universidad de Navarra. Disponible en:  
+García, J. y otros. (1998). *Aprenda lenguaje ANCI C como si estuviera en primero*. Javier Garcia de Jalón de la Fuente y otros. Escuela Superior de Ingenieros Industriales. Universidad de Navarra. Disponible en:  
 <https://openlibra.com/es/book/aprenda-el-lenguaje-ansi-c-como-si-estuviera-en-primero>
 
-Curso intensivo de Lenguaje C  
+*Curso intensivo de Lenguaje C*  
 [![Curso intensivo de Lenguaje C](https://img.youtube.com/vi/8tecJkLvAgM/0.jpg)](https://www.youtube.com/watch?v=8tecJkLvAgM)
 
-Programacion en C: metodologia, algoritmos y estructura de datos. Disponible en:  
+*Programacion en C: metodologia, algoritmos y estructura de datos*. Disponible en:  
 <https://intprog.files.wordpress.com/2015/08/programacion-en-c-metodologia-algoritmos-y-estructura-de-datos-editorial-mcgraw-hill.pdf>
 
-Librerias estandard C  
+*Librerias estandard C*  
 <https://drive.google.com/file/d/1bXma_2ZQiCwHGV0fLSmm_4HW9-3GpCxl/view?usp=sharing>
 
-Lista de reproduccion de videos relacionados con Lenguaje C. Disponible en:  
+*Lista de reproduccion de videos relacionados con Lenguaje C*. Disponible en:  
 https://www.youtube.com/playlist?list=PLCZKC1YTwC0miD2BDa_JhP4dxB1M3-iRR
