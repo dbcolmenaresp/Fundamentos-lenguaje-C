@@ -38,7 +38,9 @@ utilizados que se basan en la sintaxis del lenguaje C. Algunos de los lenguajes 
 # Etapas en la creación de un programa en lenguaje C
 ## Edición
 Proceso de creación de un programa en lenguaje C con el [compilador](https://es.wikipedia.org/wiki/Compilador) de línea de comandos [gcc](https://es.wikipedia.org/wiki/GNU_Compiler_Collection)  
+
 Edición del [código fuente](https://es.wikipedia.org/wiki/C%C3%B3digo_fuente): se crea un archivo de texto plano que contenga el código fuente completo, con el uso de un editor de texto simple como [vi](https://es.wikipedia.org/wiki/Vi).  
+
 Cada línea que contenga el archivo debe ser una sentencia que cumpla con la sintaxis del lenguaje de programación C.  
 El nombre del archivo debe tener por convención la extensión .c  
 Para editar con el editor de texto vi se ejecuta el comando  
@@ -192,18 +194,18 @@ if (condicion){
 
 ## Operador tenario ?:
 
-Esta sentencia se puede usar para remplazar el condicional if - else.
+Esta sentencia se puede usar para remplazar el condicional 'if - else' en expresiones sencillas.
 
-La sentencia es un operador tenario debido a que necesita tres operadores para su correcto funcionamiento, como se indica a continaucion.
+La sentencia es un operador tenario debido a que necesita tres operadores para su correcto funcionamiento, como se indica a continaución.
 
 `condicion ? sentencia si verdad : sentencia si falso`
 
-En esta expresion se evalua la condicion, en caso de ser cierta se ejecuta la sentencia ubicada antes del caracter ':', en caso contrario se ejecuta la sentencia ubicada despues del caracter':'.
+En esta expresión se evalua la condicion, en caso de ser cierta se ejecuta la sentencia ubicada antes del caracter ':', en caso contrario se ejecuta la sentencia ubicada despues del caracter ':'.
 
-En el codigo fuente llamado operadorternario.c, se solicita al usuario que ingrese dos numeros enteros.
+En el código fuente llamado 'operadorternario.c', se solicita al usuario que ingrese dos números enteros.
 
 ```c
-//Se solicita el ingreso del primer numero
+	//Se solicita el ingreso del primer numero
 	printf("Indique el numero 1\n");
 	scanf("%d", &numero1);
 	
@@ -211,19 +213,21 @@ En el codigo fuente llamado operadorternario.c, se solicita al usuario que ingre
 	printf("Indique el numero 2\n");
 	scanf("%d", &numero2);
 ```
-A continuacion se evalua la sentencia que compara los valores numero1 y numero2 con el uso del operador ternario ?
+A continuación se evalua la sentencia que compara los valores numero1 y numero2 con el uso del operador ternario ?
 
 ```c
 numero1 > numero2 ? printf("el numero 1 es el mayor\n") : printf("El numero 2 es el mayor o son iguales\n");
 ```
 
-Se hace la comparacion entre el numero 1 y el numero 2 y se muestra el mensaje correspondiente.
-	- Si numero1 es mayor que numero2, se muestra el primer mensaje, 
-	- En caso contrario se muestra el segundo.
+Se hace la comparación entre el número 1 y el número 2 y se muestra el mensaje correspondiente.  
+	- Si el número 1 es mayor que el número 2, se muestra el primer mensaje,  
+	- En caso contrario se muestra el segundo.  
 
 ## Actividad
 
-Desarrolle un programa en lenguaje C que solicite la edad del usuario, en caso de ser menor de 18 muestre el mensaje 'Es menor de edad', en caso de ser igual o mayor a 18 muestre el mensaje 'Es mayor de edad', este usando el operador ternario ?
+Desarrolle un programa en lenguaje C que solicite la edad del usuario, en caso de ser menor de 18 muestre el mensaje 'Es menor de edad', en caso de ser igual o mayor a 18 muestre el mensaje 'Es mayor de edad', este usando el operador ternario ?. 
+
+Edite el código fuente con cualquier editor de texto, Notepad, [Notepad++](https://notepad-plus-plus.org/), compílelo en su computador con el compilador [Devc++](http://orwelldevcpp.blogspot.com/) o edítelo y ejecutelo en línea en la plataforma [Paiza.io](https://paiza.io/es), compruebe su funcionamiento y suba el código fuente con la explicación del funcionamiento del mismo a la plataforma GitHub.
 
 ## Sentencia switch  
 
