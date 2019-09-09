@@ -438,3 +438,10 @@ García, J. y otros. (1998). *Aprenda lenguaje ANCI C como si estuviera en prime
 
 *Lista de reproduccion de videos relacionados con Lenguaje C*. Disponible en:  
 https://www.youtube.com/playlist?list=PLCZKC1YTwC0miD2BDa_JhP4dxB1M3-iRR
+
+
+# Glosario
+
+- Compilador: Programa que toma como entrada un texto escrito en un lenguaje de programación de alto nivel denominado código fuente y da como salida otro texto en un lenguaje de bajo nivel en código máquina.
+
+- Modularización: Es el proceso que consiste en dividir un programa muy grande en una serie de módulos mucho más pequeños y manejables.
