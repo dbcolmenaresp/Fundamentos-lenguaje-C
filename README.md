@@ -1,8 +1,10 @@
 # Fundamentos del lenguaje de programación C
 
-[El lenguaje de programación](https://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n) [C](https://es.wikipedia.org/wiki/C_(lenguaje_de_programaci%C3%B3n)) fue desarrollado en los laboratorios AT&T por [Dennis Ritchie](https://es.wikipedia.org/wiki/Dennis_Ritchie "Biografia de Dennis Ritchie"), quien en colaboracion con [Ken Thompson](https://es.wikipedia.org/wiki/Ken_Thompson "Biografia de Ken Thompson") creo el [sistema operativo](https://es.wikipedia.org/wiki/Sistema_operativo) [UNIX](https://es.wikipedia.org/wiki/Unix). C es el lenguaje de pogramacion de alto nivel de proposito general más popular.  
+[El lenguaje de programación](https://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n) [C](https://es.wikipedia.org/wiki/C_(lenguaje_de_programaci%C3%B3n)) fue desarrollado en los laboratorios AT&T por [Dennis Ritchie](https://es.wikipedia.org/wiki/Dennis_Ritchie "Biografia de Dennis Ritchie"), quien en colaboracion con [Ken Thompson](https://es.wikipedia.org/wiki/Ken_Thompson "Biografia de Ken Thompson") crearon el [sistema operativo](https://es.wikipedia.org/wiki/Sistema_operativo) [UNIX](https://es.wikipedia.org/wiki/Unix). C es el lenguaje de pogramacion de alto nivel de proposito general más popular.  
 
 # Breve historia del lenguaje C
+
+C es un lenguaje de programación de alto nivel creado por Dennis Ritchie para codificar el sistema operativo UNIX.
 
 - [BCPL](https://es.wikipedia.org/wiki/BCPL_(lenguaje_de_programaci%C3%B3n)): desarrollado en 1969 por [Martin Richards](https://es.wikipedia.org/wiki/Martin_Richards "Biografia de Martin Richards") como un lenguaje para escribir software de sistemas operativos y [compiladores](https://es.wikipedia.org/wiki/Compilador).
 - [B](https://es.wikipedia.org/wiki/B_(lenguaje_de_programaci%C3%B3n)): Ken Thompson uso muchas caracteristicas de CPL y uso B para crear una temprana version del sistema operativo UNIX en los laboratorios Bell en 1970 en una computadora DEC PDP-7.
@@ -12,19 +14,22 @@ BCPL y B eran lenguajes de programacion sin tipado, la labor de elegir entre los
 
 # Características del lenguaje C
 
+- El lenguaje de programación C posee un alto nivel de portabilidad aportado por la gran cantidad de compiladores para cada sistema operativo. La implementación de un programa depende del compilador y de las bibliotecas incluidas.
 - Lenguaje de proposito general lo cual significa que con este lenguaje de programacion se puede desarrollar programas para resolver problemas de una muy amplia gama de propositos.
+- C es un lenguaje de programación estructurado, puesto que permite el uso de bloques de sentencias agrupadas dentro de instrucciones de control y bucles.
 - Lenguaje de alto nivel las sentencias que conforman el lenguaje se expresan en un lenguaje que se entiende facilmente, parecido al lenguaje inglés con reglas estrictas de sintaxis, lo que aporta legibilidad y facilidad de mantenimiento a los programas desarrollados en este lenguaje.
 - Lenguaje compilado, el codigo fuente conformado por una serie de sentencias en lenguaje de alto nivel es traducido a traves del proceso de compilacion, en un archivo en lenguaje de maquina en codigo binario que entiende y ejecuta el computador.
-- Lenguaje de formato estructurado.
 - Lenguaje con tipado de datos el lenguaje proporciona la verificacion del tipo de datos con el que realiza las operaciones.
+- El lenguaje de programación c se puede utilizar para crear programas de bajo nivel debido a que permite la ejecución de sentencias para el control de bits individuales, con lo cual cubre el vacío existente entre los lenguajes de máquina y los lenguajes de alto nivel convencionales.
 - El lenguaje C permite la manipulacion directa de bits, bytes, palabras y punteros, esto le hace particularmente adecuado para la programacion de sistemas, en la que estas operaciones son muy comunes.
+- El lenguaje C posee un repertorio de sentencias básico, y reducido, lo cual contribuye a reducir la curva de aprendizaje. Este reducido número de instrucciones es compensado por una gran cantidad de funciones de biblioteca que se encargan de realizar labores especializadas de los programas.
 - El lenguaje C tiene solo 32 palabras clave (27 estandard originales y 5 añadidas por el comite de estandarizacion de ANSI), numero micho menor al que contienen otros lenguajes de programacion de alto nivel.
 
 # Razones para usar el lenguaje C
 
 - De facil aprendizaje por ser un lenguaje formado por pocas palabras clave y pocos comandos que recordar, que aunado a la facilidad de comprension por ser un lenguaje de alto nivel, permite comprender la programacion en el lenguaje C con relativa facilidad.
 - Potencia y versatilidad se pueden hacer muchas cosas con este lenguaje.
-- Eficiencia los programas escritos en el lenguaje de programación C se traducen a lenguaje de maquina para la plataforma en la cual se compila, lo cual contribuye a la obtencion de programas mas eficientes.
+- Eficiencia los programas escritos en el lenguaje de programación C se traducen a lenguaje de máquina para la plataforma en la cual se compila, lo cual contribuye a la obtencion de programas mas eficientes.
 - Portabilidad multiplataforma los programas hechos en este lenguaje pueden ser ejecutados en diferentes plataformas para las cuales exista un compilador que convierta adecuadamente el codigo fuente en el lenguaje de maquina correspondiente.
 - Es la base de otros lenguajes la mayoria de lenguajes modernos derivan a partir de este, lo cual supone la ventaja de poder aplicar los conocimientos adquiridos en la programacion en C, en la programacion con otros lenguajes similares mas modernos y 
 utilizados que se basan en la sintaxis del lenguaje C. Algunos de los lenguajes cuya sintaxis deriva del lenguaje C son:
