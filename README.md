@@ -4,7 +4,7 @@
 
 Para comenzar a programar en cualquier lenguaje de programacion, se deben tener inicialmente claros los conceptos del desarrollo de algoritmos, con la finalidad de plantear la estructura de nuestros programas y revisar su comportamiento y eficacia. Para tener un mejor conocimiento sobre los algoritmos se aconseja revisar el siguiente recurso:
 
-
+[Fundamentos de Algoritmos](https://github.com/dbcolmenaresp/fundamentosalgoritmos)
 
 # Breve historia del lenguaje C
 
