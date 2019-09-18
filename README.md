@@ -404,7 +404,36 @@ Una función dentro de un programa aparece en tres diferentes oportunidades, a s
 
 - *Definición de la función*, se indica nuevamente el tipo de retorno, el nombre de la función, los argumentos y se detallan las sentencias que componen el cuerpo de la función.
 
+Para poder hacer uso de una funcion, es necesario que la misma este definida en el mismo código fuente o en algun otro archivo externo.
+
+La definicion de una funcion es el conjunto de sentencias o instrucciones necesarias para que la funcion pueda realizar su tarea cuando sea llamada. La definicion de una funcion esta conformada por la definicion del tipo del valor de retorno, el nombre de la funcion y una lista separada por comas del tipo y nombre de los argumentos que se reciben para hacer las operaciones definidas en la funcion.
+
+La definicon parcial de la funcion potencia puede ser definida de la siguiente manera:
+
+```
+double potencia(double base, double exponente){
+	...
+	resultado = ...;
+	retur resultado;
+}
+```
+
+Las variables *base* y *exponente* se declaran en la cabecera de la definicion de la funcion, cuando la funcion es llamada, estas variables reciben los valores indicados en lso argumentos de la llamada.
+
 - *Llamada de la función*, ocurre en cualquier lugar del código fuente donde se coloca el nombre de la función y la lista de argumentos y le indica al programa que debe ir hasta la función, enviando los argumentos indicados y retornar el valor obtenido de la ejecución de la función para su uso.
+
+Las funciones en lenguaje C se llaman especificando su nombre seguido por una lista de los argumentos entre parentesis y separadas por comas, que son los datos necesarios para calcular el valor deseado. Como resultado de la ejecucion de la funicon se guarda el valor obtenido como el valor de retorno, el cual aparece sustituyendo al nombre de la funicon en el mismo lugar donde se ha hecho la llamada, este valor devuelto por la funcion debe asignarse a una variable o usarse en una expresión.
+
+Supongamos que se declara y se define una funcion llamada potencia, que necesita como argumentos el valor de la base y el exponente, para realizar el llamado a dicha funcion se asigna el valor de retorno a una variable y se le pasan como argumentos los datos necesarios, de la siguiente manera:
+
+```
+float aceleracion = 0;
+...
+aceleracion = potencia(2, 3) * distancia;
+...
+```
+
+El primer argumento es elevado al segundo argumento, el valor de retorno es multiplicado por la distancia y el resultado de toda esta expresion se almacena en la varialbe (posición de memoria asociada con el identificador aceleracion).
 
 # Estructura de una función en lenguaje C
 
