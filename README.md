@@ -233,16 +233,24 @@ Los operadores son signos especiales o conjuntos de caracteres que indican deter
 
 ## Sentencia if  
 
+Permite ejecutar o no una sentencia simple o compuesta según se cumpla o no una condición.
+
 ```
 if (condicion)  
     sentencia;
 ```
-    
+
 ```
 if (condicion){  
     bloque de sentencias  
 }
 ```
+
+Se evalúa expresion, si es verdadera se ejecuta sentencia, si es falsa no se ejecuta sentencia y se continua con la ejecución normal del programa.
+
+## Setencia if - else
+
+Esta sentencia realiza una bifurcación según se cumpla o no una condición.
 
 ```
 if (condicion){  
@@ -261,6 +269,8 @@ if (condicion){
     bloque de sentencias  
 }
 ```
+
+Se evalúa expresion, si el resultado es verdadero se ejecuta sentencia1 y no se ejecuta sentencia2, si el resultado es falso se ejecuta sentencia2 y no se ejecuta sentencia1.
 
 ## Operador tenario ?:
 
