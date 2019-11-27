@@ -130,6 +130,12 @@ Crea el código fuente a partir del archivo recibido del compilador.
 ## Ligador  
 Se encarga de incluir el código correspondiente a las funciones de biblioteca indicadas en el archivo fuente y resuelve las referencias a variables externas.
 
+## Ejecución de programas C en plataforma Windows
+
+Para crear, compilar y ejecutar programas escritos en lenguaje C en la plataforma Windows, se recomienda descargar e instalar el programa que se encuentra en el siguiente enlace:
+
+http://orwelldevcpp.blogspot.com/
+
 ## Palabras clave de ANSI C
 En el lenguaje c se han establecido una serie de palabras reservadas que realizan tareas específicas y no pueden ser usadas como identificadores.
 
