@@ -204,12 +204,52 @@ Se declaran al inicio del programa el tipo de variable que devuelve cada funcion
 - [Paiza.io](https://paiza.io/es) permite editar y copilar en línea. Es compatible con más de 20 lenguajes: C, C++, Java, Ruby, Python, PHP, Perl... y más. Puede utilizarlo para aprender a programar, escribir archivos por lotes, como web scraper, etc ...  
 
 # Variables
-Son espacios de memoria asignados para almacenar un valor determinado, el tamaño de memoria que se debe asignar depende del tipo de variable que se va a almacenar.  
+
+Son espacios de memoria asignados para almacenar un valor determinado, el tamaño de memoria que se debe asignar depende del tipo de variable que se va a almacenar.
+
+En C es necesario declarar todas las variables antes de utilizarlas. Una variable no declarada, a la cual se le intenta asignar un valor, produce un mensaje de error durante la compilación.
+
+Cuando una variable es declarada, se le reserva cierta cantidad de memoria de acuerdo con el tipo indicado en la declaración, para que los valores puedan ser almacenados adecuadamente.
+
+Por ejemplo, un tipo de dato carácter requiere un byte (8 bits), para ser almacenado, por lo tanto al momento de declarar una variable de tipo carácter se debe reservar al menos 1 byte de memoria para que dicho valor sea almacenado de manera correcta.
+
 Declaración  
-Asignación  
-Tipos  
 
+## Tipos  
 
+### Entero
+
+Un tipo de dato entero se designa con la palabra reservada int e indica que se trata de un numero entero, es decir, un numero sin parte decimal.
+
+Dependiendo de la manera en que se declare una variable entera, se reserva cierta cantidad de memoria para almacenarla y definir el rango de valores que se pueden almacenar en dicha variable.
+
+Una variable por defecto se almacena en 2 bytes de memoria (16 bits), si se declara para que almacene solo valores positivos, puede abarcar un rango desde 0 hasta 65535 y se declara de la siguiente manera:
+
+```c
+unsigned int numero;
+```
+
+Una variable entera puede declararse para que almacene números negativos, con lo cual su rango de valores será desde el -32768 hasta el 32767 y se declara de la siguiente manera:
+
+```c
+int nota = 10;
+```
+
+Para almacenar un número con un rango mayor de valores se declara la variable entera de tipo long, la cual se almacena en 4 bytes (32 bits), con lo cual se consiguen los siguientes rangos de valores
+
+Para almacenar un número positivo muy grande entre 0 y 4.244.967.296 se declara de la siguiente manera
+
+```c
+unigned long positivo_muy_grande;
+```
+
+Para almacenar números que pueden ser negativos en un rango desde -2.147.483.648 y 2.147.483.647 se declara de la siguiente manera
+
+```c
+long numero_grande;
+```
+
+Se debe tener mucha precaución, ya que cuando a una variable de tipo entero se le asigna en tiempo de ejecución un valor fuera del rango permitido para el tipo declarado, se produce un error en el resultado de consecuencias imprevisibles, debido a que el programa no avisa de dicha situación al usuario, es por ello que se debe ser muy cuidadoso al momento de determinar los posibles valores de las variables al momento de diseñar los programas.
 
 Globales  
 Locales  
@@ -223,6 +263,51 @@ Valores intermedios de operaciones, acumuladores, contadores
 # Operadores
 
 Los operadores son signos especiales o conjuntos de caracteres que indican determinadas operaciones a realizar con las variables.
+
+## Operador de asignación
+
+El operador de asignación es el operador más básico y frecuentemente usado en los programas.
+Consiste en almacenar el valor indicado a la derecha de una sentencia en la variable indicada a la izquierda de dicha sentencia.
+
+El valor almacenado en una variable permanece guardado sin modificaciones hasta que dicho valor se cambia a través de una sentencia con el operador de asignación o hasta que finaliza el programa.
+
+El valor almacenado en una variable a través de un operador de asignación puede provenir de uno de los siguientes casos:
+
+- Un valor simple que se corresponda con el tipo de variable en la cual se v a almacenar.
+
+```c
+int a; // Se declara una variable de tipo entero
+a = 10; // Se le asigna a la variable a el valor de 10
+```
+
+- El valor contendido en otra variable del mismo tipo
+```c
+int b = 15; // Se declara e inicializa una variable de tipo entero con el valor 15
+a = b; // Se asigna a la variable a el valor contenido en la variable b
+```
+
+- El valor de retorno de una función
+
+```c
+int suma(int a, int b){
+    return a + b; // Se retorna el valor de la suma de los argumentos recibidos por la función
+}
+
+int main(){
+    int x = 5;
+    int y = 15;
+    int z;
+    z = suma(x, y);
+    return 0;
+}
+```
+
+- El resultado de una expresión que puede contener valores simples, variables y funciones
+
+```c
+int w;
+w = 10 * suma(x, y) + b; // Se asigna a la variable entera w el resultado de la expresión indicada
+```
 
 ## Operadores aritméticos
 
@@ -302,7 +387,9 @@ Esta sentencia se puede usar para remplazar el condicional 'if - else' en expres
 
 La sentencia es un operador tenario debido a que necesita tres operadores para su correcto funcionamiento, como se indica a continaución.
 
-`condicion ? sentencia si verdad : sentencia si falso`
+```c
+condicion ? sentencia_si_verdad : sentencia_si_falso;
+```
 
 En esta expresión se evalua la condicion, en caso de ser cierta se ejecuta la sentencia ubicada antes del caracter ':', en caso contrario se ejecuta la sentencia ubicada despues del caracter ':'.
 
@@ -326,6 +413,41 @@ numero1 > numero2 ? printf("el numero 1 es el mayor\n") : printf("El numero 2 es
 Se hace la comparación entre el número 1 y el número 2 y se muestra el mensaje correspondiente.  
 	- Si el número 1 es mayor que el número 2, se muestra el primer mensaje,  
 	- En caso contrario se muestra el segundo.  
+
+## Sentencia switch
+
+Esta sentencia permite realizar una ramificación según el valor evaluado.
+
+```c
+switch (expresión) {
+    case valor1:
+        sentencia1;
+        break;
+    case valor2:
+        sentencia2;
+        break;
+    default:
+        sentencian;
+}
+```
+
+## Bucles
+
+Son sentencias que permiten repetir un numero de veces un grupo de sentencias.
+
+### Sentencia while
+
+Esta sentencia permite ejecutar repetidas veces una sentencia o grupo de sentencias, mientras se cumpla la condición.
+
+```c
+while (expresion)
+    sentencia;
+```
+
+Se ejecuta sentencia mientras la evaluación de expresión sea verdadera, cuando sea falsa se sale del ciclo de repetición y se continua con la ejecución normal del programa.
+
+Se debe tener la precaución que al ejecutar cada repetición del ciclo, se debe modificar el valor evaluado en expresion hasta encontrar la condición de finalización del ciclo.
+
 
 ### Actividad
 
