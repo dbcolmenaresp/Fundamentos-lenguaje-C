@@ -145,13 +145,18 @@ default		goto		sizeof		volatile
 do		if		static		while
 
 ## Identificador
+
 Un identificador es un nombre simbólico que se refiere a un dato, función o programa.
+
 Se debe indicar de manera explícita el nombre de cada dato y función y que tipo de dato va a representar cada uno de ellos.
 El nombre de un identificador debe elegirse de forma tal que guarde una estrecha relación con el sentido físico, matemático o real del dato que representa, esto con la finalidad de facilitar el proceso de corrección y mantenimiento de los programas.
+
 El modo más básico de ubicar un dato en memoria es a través de un número que representa la dirección de memoria en la cual se encuentra almacenado dicho dato, pero este mecanismo presenta dos dificultades:
+
 - No hay un vínculo nemotécnico que permita relacionar la dirección de memoria donde se encuentra almacenado un dato con su contenido.
 - La dirección donde se almacena un dato cambia en cada ejecución del programa.
 Internamente se referencia cada dato usado en el programa con una tabla que relaciona cada identificador con el tipo de dato que representa y la posición de memoria en la que está almacenado.
+
 Para seleccionar un identificador, se deben seguir las siguientes reglas:
 1. Un identificador se forma por una secuencia de letras (minúsculas de la ‘a’ a la ‘z’, mayúsculas de la ‘A’ a la ‘Z’) y dígitos (del ‘0’ al ‘9’).
 2. El carácter subrayado o guion bajo (‘_’) se considera como otra letra más.
@@ -240,7 +245,7 @@ Para almacenar un número con un rango mayor de valores se declara la variable e
 Para almacenar un número positivo muy grande entre 0 y 4.244.967.296 se declara de la siguiente manera
 
 ```c
-unigned long positivo_muy_grande;
+unsigned long positivo_muy_grande;
 ```
 
 Para almacenar números que pueden ser negativos en un rango desde -2.147.483.648 y 2.147.483.647 se declara de la siguiente manera
