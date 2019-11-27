@@ -38,7 +38,7 @@ BCPL y B eran lenguajes de programacion sin tipado, la labor de elegir entre los
 - Es la base de otros lenguajes la mayoria de lenguajes modernos derivan a partir de este, lo cual supone la ventaja de poder aplicar los conocimientos adquiridos en la programacion en C, en la programacion con otros lenguajes similares mas modernos y 
 utilizados que se basan en la sintaxis del lenguaje C. Algunos de los lenguajes cuya sintaxis deriva del lenguaje C son:
 
-	- [C++](https://es.wikipedia.org/wiki/C%2B%2B) es una version ampliada del lenguaje C que agrega la posibilidad de usar caracteristicas de la programacion orientada a objetos, usado para desarrollar aplicaciones de escritorio y videojuegos de diferentes plataformas.
+- [C++](https://es.wikipedia.org/wiki/C%2B%2B) es una version ampliada del lenguaje C que agrega la posibilidad de usar caracteristicas de la programacion orientada a objetos, usado para desarrollar aplicaciones de escritorio y videojuegos de diferentes plataformas.
 	- [Java](https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)), [javascript](https://es.wikipedia.org/wiki/JavaScript), [PHP](https://es.wikipedia.org/wiki/PHP) usados principalmente para el desarrollo de aplicaciones web.
 	- [Objetive-C](https://es.wikipedia.org/wiki/Objective-C) usado para desarrollar aplicaciones en la plataforma iOS.
 	- [C#](https://es.wikipedia.org/wiki/C_Sharp) usado para desarrollar aplicaciones de Windows Phone y juegos de XBOX 360.
@@ -208,6 +208,9 @@ Son espacios de memoria asignados para almacenar un valor determinado, el tamañ
 Declaración  
 Asignación  
 Tipos  
+
+
+
 Globales  
 Locales  
 Usos de variables  
@@ -235,14 +238,20 @@ Los operadores son signos especiales o conjuntos de caracteres que indican deter
 
 Permite ejecutar o no una sentencia simple o compuesta según se cumpla o no una condición.
 
-```
+```c
 if (condicion)  
     sentencia;
 ```
 
-```
+Si se desea ejecutar un grupo o bloque de sentencias, se deben encerrar entre los simbolos de apertura y cierre de llave { y }.
+
+```c
 if (condicion){  
-    bloque de sentencias  
+    sentencia1;
+    sentencia2;
+    sentencia3;
+    ...
+    sentencian;
 }
 ```
 
@@ -252,7 +261,7 @@ Se evalúa expresion, si es verdadera se ejecuta sentencia, si es falsa no se ej
 
 Esta sentencia realiza una bifurcación según se cumpla o no una condición.
 
-```
+```c
 if (condicion){  
     bloque de sentencias  
 }else{  
@@ -260,7 +269,7 @@ if (condicion){
 }
 ```  
 
-```
+```c
 if (condicion){  
     bloque de sentencias  
 }esle if (condicion){  
@@ -271,6 +280,21 @@ if (condicion){
 ```
 
 Se evalúa expresion, si el resultado es verdadero se ejecuta sentencia1 y no se ejecuta sentencia2, si el resultado es falso se ejecuta sentencia2 y no se ejecuta sentencia1.
+
+## Sentencia if else multiple
+
+Esta sentencia permite realizar una ramificación múltiple.
+
+```c
+if (expresion1)
+    sentencia1;
+else if (expresion2)
+    sentencia2;
+else
+    sentencian;
+```
+
+Se evalúa expresion1, si es verdadera se ejecuta sentencia1, si no se evalúa expresion2, si es verdadera se ejecuta sentencia2, si no se ejecuta sentencian.
 
 ## Operador tenario ?:
 
